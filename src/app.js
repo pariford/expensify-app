@@ -16,15 +16,6 @@ const store = configureStore();
 //setTextFilter ->bill(2 items) ->water (1 item)
 //getVisibleExpenses -> print visible ones to screen
 
-store.subscribe(() => {
-  const state = store.getState();
-  const visibleExpenses = expenseSelector(state.expenses, state.filters);
-  console.log(visibleExpenses);
-});
-store.dispatch(addExpense({ description: "Water Bill", amount: 4500 }));
-store.dispatch(addExpense({ description: "Gas Bill", createdAt: 1000 }));
-store.dispatch(addExpense({ description: "Rent", amount: 10950 }));
-
 const jsx = (
   <Provider store={store}>
     <AppRouter />

@@ -11,6 +11,7 @@
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
+    "express": "^4.16.3",
     "extract-text-webpack-plugin": "^3.0.2",
     "global": "^4.3.2",
     "jest": "^23.1.0",
@@ -40,7 +41,9 @@
     "webpackBuildProd": "webpack -p --env production",
     "startDev": "webpack-dev-server",
     "test": "jest --config=jest.config.json",
-    "serve": "live-server public/"
+    "serve": "live-server public/",
+    "start":"node server/server.js",
+    "heroku-postBuild":"npm run webpackBuildProd"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

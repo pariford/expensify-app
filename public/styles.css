@@ -1095,7 +1095,7 @@ template {
   padding: 7px 7px 5px; }
 
 .DateInput_input__regular {
-  font-weight: auto; }
+  font-weight: bold; }
 
 .DateInput_input__readOnly {
   -webkit-user-select: none;
